@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    color: #222;
+    background: #f9f9f7;
+    padding: 0;
+    margin: 0;
+}
+
+/* ── Header ── */
+header {
+    background: #fff;
+    border-bottom: 2px solid #222;
+    padding: 18px 40px;
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+}
+
+header h1 a {
+    color: #222;
+    text-decoration: none;
+}
+
+/* ── Nav bar ── */
+nav.main-nav {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 0 40px;
+    display: flex;
+    gap: 0;
+}
+
+nav.main-nav a {
+    display: inline-block;
+    padding: 10px 18px;
+    color: #444;
+    text-decoration: none;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    border-right: 1px solid #eee;
+}
+
+nav.main-nav a:first-child {
+    border-left: 1px solid #eee;
+}
+
+nav.main-nav a:hover,
+nav.main-nav a.active {
+    background: #222;
+    color: #fff;
+}
+
+/* ── Main content ── */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 40px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ccc;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+/* ── Tables ── */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+thead tr {
+    background: #f0f0ee;
+    border-bottom: 2px solid #aaa;
+}
+
+th {
+    padding: 10px 14px;
+    text-align: left;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #444;
+}
+
+td {
+    padding: 9px 14px;
+    border-bottom: 1px solid #e8e8e6;
+    font-size: 14px;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover td {
+    background: #f5f5f2;
+}
+
+.count {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+/* ── Forms ── */
+form {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 28px 32px;
+    max-width: 480px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #bbb;
+    background: #fff;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    color: #222;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #555;
+}
+
+button[type="submit"] {
+    margin-top: 8px;
+    padding: 9px 22px;
+    background: #222;
+    color: #fff;
+    border: none;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+}
+
+button[type="submit"]:hover {
+    background: #444;
+}
+
+/* ── Messages ── */
+.message {
+    padding: 12px 18px;
+    border: 1px solid #bbb;
+    background: #fff;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.message.success {
+    border-left: 4px solid #4a7c4a;
+    color: #2d5a2d;
+}
+
+.message.error {
+    border-left: 4px solid #9a4a4a;
+    color: #6a2a2a;
+}
+
+/* ── Footer ── */
+footer {
+    border-top: 1px solid #ccc;
+    padding: 16px 40px;
+    margin-top: 60px;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+}
+td.actions {
+    white-space: nowrap;
+    min-width: 200px;
+}
+
+td.actions button {
+    margin: 2px;
+}
+
+button[type="button"] {
+    margin-top: 8px;
+    padding: 9px 22px;
+    background: #222;
+    color: #fff;
+    border: none;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+}
+
+button[type="button"]:hover {
+    background: #444;
+}
+
+a.btn-supprimer {
+    display: inline-block;
+    margin-top: 2px;
+    padding: 9px 22px;
+    background: #222;
+    color: #fff;
+    border: none;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+}
+
+a.btn-supprimer:hover {
+    background: #444;
+}
+
+/* Ajustements d'affichage : boutons d'action alignés sur une ligne */
+main { max-width: 1200px; }
+td.actions form {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+    max-width: none;
+}
+td.actions button {
+    padding: 6px 10px;
+    font-size: 12px;
+}

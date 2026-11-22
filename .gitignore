@@ -1,0 +1,8 @@
+# Identifiants locaux de la base de données
+site/config.php
+
+# Fichiers d'IDE et système
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
